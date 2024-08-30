@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benchmarking</title>
+    <link rel="stylesheet" href="benchmarking.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Navbar Content -->
+    <nav class="Navbar">
+      <nav class="top">
+        <img src="asset/logo.jpeg" alt="Logo CDA" />
+        <div class="namaLogo">
+          <p>Central Data Access</p>
+          <i>Transfer Pricing Specialist</i>
+        </div>
+        <p class="Indonesia">IN</p>
+        <p class="English">ENG</p>
+        <a href="mailto:cs@centraldataaccess.co.id"
+          >cs@centraldataaccess.co.id</a
+        >
+        <a
+          href="https://youtu.be/tT1sqLOwPQk?si=27mfjoATYPmsIMWR"
+          class="socialMedia"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a
+          href="https://youtu.be/tT1sqLOwPQk?si=27mfjoATYPmsIMWR"
+          class="socialMedia"
+        >
+          <i class="bx bxl-youtube"></i>
+        </a>
+        <a
+          href="https://youtu.be/tT1sqLOwPQk?si=27mfjoATYPmsIMWR"
+          class="socialMedia"
+        >
+          <i class="bx bxl-tiktok"></i>
+        </a>
+        <a
+          href="https://youtu.be/tT1sqLOwPQk?si=27mfjoATYPmsIMWR"
+          class="socialMedia"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </nav>
+      <nav class="bottom">
+        <a href="#">Tentang Kami</a>
+        <a href="#">Jasa Kami</a>
+        <a href="#">Data Pembanding</a>
+        <a href="#">Info Perpajakan</a>
+        <a href="#">Jasa Kami</a>
+        <i class="bx bxs-phone"></i>
+        <div class="contact">
+          <p>0822-1001-9797</p>
+          <p>0822-1001-9696</p>
+        </div>
+        <a href="login.html" class="Login">Masuk</a>
+      </nav>
+    </nav>
+    <!-- End Navbar Content -->
+
+    <!-- Content -->
+    <div class="Content">
+      <div class="banner">
+        <img src="asset/company13.jpg" alt="" />
+        <div class="blur"></div>
+        <div class="text">
+          <p>
+            DATA PEMBANDING LAPORAN <br />
+            KEUANGAN
+          </p>
+          <div class="title">
+            <div class="grafik1"></div>
+            <div class="grafik2"></div>
+            <div class="grafik3"></div>
+            <div class="konten">BENCHMARKING</div>
+            <p style="text-indent: 45px">
+              Dokumen Penetapan Harga Transfer menguji kewajaran transaksi
+              afiliasi yang dilakukan dengan mencari perusahaan pembanding yang
+              sering disebut dengan Benchmarking Data Pembanding. Data
+              Pembanding Eksternal yang tersedia diperoleh dari BvD TPCatalyst
+              yang kemudian diolah menjadi Benchmarking Data Pembanding yang di
+              klasifikasikan berdasarkan klasifikasi usaha.
+            </p>
+            <p class="deskripsi2" style="text-indent: 45px">
+              Berdasarkan PMK No. 172 Tahun 2023 tentang Penerapan Prinsip
+              Kewajaran dan Kelaziman Usaha Dalam Transaksi Yang Dipengaruhi
+              Hubungan Istimewa, penentuan harga transfer yang memenuhi Prinsip
+              Kewajaran dan Kelaziman Usaha menggunakan titik paling tepat di
+              dalam Benchmarking atau titik tengah (median) di dalam rentang
+              kewajaran.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="perhitungan">
+        <div class="calculator">
+          <button class="title">
+            <h4>INDUSTRI KEGIATAN</h4>
+            <i class="bx bxs-chevron-down"></i>
+          </button>
+          <div class="content1">
+            <div class="JenisKegiatanUsaha">
+              <label for="Kegiatan">Jenis Kegiatan Usaha</label>
+              <select name="Kegiatan" id="Kegiatan">
+                <option value="" disabled selected>
+                  Pilih Jenis Kegiatan Usaha
+                </option>
+                <option value="Manufaktur">Manufaktur</option>
+                <option value="Distributor">Distributor</option>
+                <option value="Jasa">Jasa</option>
+              </select>
+            </div>
+            <div class="KlasifikasiUsaha">
+              <label for="Klasifikasi">Klasifikasi Usaha</label>
+              <select name="Klasifikasi" id="Klasifikasi">
+                <option value="" disabled selected>
+                  Pilih Jenis Klasifikasi Usaha
+                </option>
+                <option value="Garmen">Industri Garmen</option>
+                <option value="Peternakan">Industri Peternakan</option>
+              </select>
+            </div>
+            <div class="Ratio">
+              <label for="Ratio">Ratio</label>
+              <select name="Ratio" id="Ratio">
+                <option value="" disabled selected>Pilih Jenis Ratio</option>
+                <option value="RPM">
+                  Resale Price Methode (Laba Kotor/Penjualan)
+                </option>
+                <option value="CPM">
+                  Cost Plus Methode (Laba Kotor/Harga Pokok Penjualan)
+                </option>
+                <option value="ROS">
+                  Return On Sales (Laba Operasi/Penjualan)
+                </option>
+                <option value="NCPM">
+                  Net Cost Plus Methode (Laba Operasi/Harga Pokok
+                  Penjualan+Biaya Operasional)
+                </option>
+              </select>
+            </div>
+            <div class="timeline">
+              <p>Tahun</p>
+              <div class="timeline-controls">
+                <button class="control-btn" data-year="2020"></button>
+                <button class="control-btn" data-year="2020"></button>
+                <button class="control-btn" data-year="2020"></button>
+                <button class="control-btn" data-year="2021"></button>
+                <button class="control-btn" data-year="2022"></button>
+                <button class="control-btn" data-year="2023"></button>
+              </div>
+              <div class="data">
+                <div class="tahun">2018</div>
+                <div class="tahun">2019</div>
+                <div class="tahun">2020</div>
+                <div class="tahun">2021</div>
+                <div class="tahun">2022</div>
+                <div class="tahun">2023</div>
+              </div>
+            </div>
+          </div>
+          <button class="title">
+            <h4>LAPORAN KEUANGAN PERUSAHAAN</h4>
+            <i class="bx bxs-chevron-down"></i>
+          </button>
+          <div class="content2">
+            <div class="Penjualan">
+              <label for="">Penjualan</label>
+              <input type="text" id="Penjualan" />
+            </div>
+            <div class="HargaPokokPenjualan">
+              <label for="">Harga Pokok Penjualan</label>
+              <input type="text" id="HargaPokokPenjualan" />
+            </div>
+            <div class="BebanOperasional">
+              <label for="">Beban Operasional</label>
+              <input type="text" id="BebanOperasional" />
+            </div>
+            <div class="LabaKotor">
+              <label for="">Laba Kotor</label>
+              <input type="text" id="LabaKotor" />
+            </div>
+            <div class="LabaOperasional">
+              <label for="">Laba Operasional</label>
+              <input type="text" id="LabaOperasional" />
+            </div>
+            <div class="TestedParty">
+              <label for="">Tested Party</label>
+              <input type="text" id="TestedParty" />
+            </div>
+          </div>
+          <button type="button" class="jumlah" id="hitung">HITUNG</button>
+        </div>
+        <div class="hasil">
+          <div class="BenchmarkingRatio">
+            <h4>BENCHMARKING RATIO</h4>
+            <button type="button" id="print" class="print">EXCEL</button>
+            <p>DATA TIDAK TERSEDIA</p>
+            <div class="detail" id="detail">
+              <div class="detail2" id></div>
+            </div>
+            <div class="negara" id="tabelPembanding">
+              <table border="1">
+                <tr>
+                  <td style="padding: 10px 20px 10px 20px" rowspan="2">No</td>
+                  <td style="padding: 10px 100px 10px 100px" rowspan="2">
+                    Perusahaan
+                  </td>
+                  <td style="padding: 10px 50px 10px 50px" rowspan="2">
+                    Negara
+                  </td>
+                  <td style="padding: 10px 100px 10px 100px" colspan="5">
+                    ReturnOfSale
+                  </td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>2022</td>
+                  <td>2021</td>
+                  <td>2020</td>
+                  <td>2019</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="HasilHitung">
+            <h4>PERHITUNGAN</h4>
+            <p>DATA TIDAK TERSEDIA</p>
+            <div class="line">
+              <div class="line2"></div>
+            </div>
+            <div class="testedPartyNilai" id="testedPartyNilai">
+              <table>
+                <tr>
+                  <td>Tested Party</td>
+                  <td>-2.66666666666666</td>
+                </tr>
+              </table>
+            </div>
+            <div class="nilai" id="nilai">
+              <table border="1">
+                <tr>
+                  <td style="padding: 10px 80px 10px 80px" rowspan="2">
+                    Keterangan
+                  </td>
+                  <td style="padding: 10px 100px 10px 100px" colspan="5">
+                    ReturnOfSale
+                  </td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>2022</td>
+                  <td>2021</td>
+                  <td>2020</td>
+                  <td>2019</td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      background-color: white;
+                      color: #000000;
+                      text-align: end;
+                    "
+                  >
+                    Minimum
+                  </td>
+                  <td
+                    colspan="5"
+                    style="background-color: white; color: #000000"
+                  ></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      background-color: white;
+                      color: #000000;
+                      text-align: end;
+                    "
+                  >
+                    Kuartil 1
+                  </td>
+                  <td
+                    colspan="5"
+                    style="background-color: white; color: #000000"
+                  ></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      background-color: white;
+                      color: #000000;
+                      text-align: end;
+                    "
+                  >
+                    Kuartil 2
+                  </td>
+                  <td
+                    colspan="5"
+                    style="background-color: white; color: #000000"
+                  ></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      background-color: white;
+                      color: #000000;
+                      text-align: end;
+                    "
+                  >
+                    Kuartil 3
+                  </td>
+                  <td
+                    colspan="5"
+                    style="background-color: white; color: #000000"
+                  ></td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      background-color: white;
+                      color: #000000;
+                      text-align: end;
+                    "
+                  >
+                    Maksimum
+                  </td>
+                  <td
+                    colspan="5"
+                    style="background-color: white; color: #000000"
+                  ></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+    <script src="benchmarking.js"></script>
+  </body>
+</html>
